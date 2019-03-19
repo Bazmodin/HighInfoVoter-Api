@@ -46,9 +46,13 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Request\EchoAddRequest.cs" />
     <Compile Include="Request\EchoUpdateRequest.cs" />
+    <Compile Include="Response\ErrorResponse.cs" />
+    <Compile Include="Response\ItemResponse.cs" />
+    <Compile Include="Response\ItemsResponse.cs" />
+    <Compile Include="Response\Response.cs" />
+    <Compile Include="Response\SuccessResponse.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Response\" />
     <Folder Include="View\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

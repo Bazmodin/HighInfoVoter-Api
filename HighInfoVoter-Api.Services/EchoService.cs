@@ -1,4 +1,6 @@
-﻿using HighInfoVoter_Api.Models.Request;
+﻿using HighInfoVoter_Api.Models.Domain;
+using HighInfoVoter_Api.Models.Request;
+using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
@@ -32,6 +34,27 @@ namespace HighInfoVoter_Api.Services
                     conn.Close();
                 }
             }
+            return result;
+        }
+
+        public List<Echo> GetAll()
+        {
+            List<Echo> result = new List<Echo>();
+
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                string cmdText = "Echo_SelectAll";
+                using (SqlCommand cmd = new SqlCommand(cmdText, conn))
+                {
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    
+
+                    conn.Open();
+                    cmd.ExecuteReader
+                    conn.Close();
+                }
+            }
+
             return result;
         }
     }

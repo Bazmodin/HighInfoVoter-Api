@@ -258,6 +258,16 @@
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HighInfoVoter-Api.Models\HighInfoVoter-Api.Models.csproj">
+      <Project>{459CAFD1-FAA0-40A1-BB9C-6154DEFA6417}</Project>
+      <Name>HighInfoVoter-Api.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HighInfoVoter-Api.Services\HighInfoVoter-Api.Services.csproj">
+      <Project>{B54C3D0E-E20B-419E-A69C-961EA989D0C4}</Project>
+      <Name>HighInfoVoter-Api.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
