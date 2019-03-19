@@ -36,26 +36,5 @@ namespace HighInfoVoter_Api.Services
             }
             return result;
         }
-
-        public List<Echo> GetAll()
-        {
-            List<Echo> result = new List<Echo>();
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
-                string cmdText = "Echo_SelectAll";
-                using (SqlCommand cmd = new SqlCommand(cmdText, conn))
-                {
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    
-
-                    conn.Open();
-                    cmd.ExecuteReader
-                    conn.Close();
-                }
-            }
-
-            return result;
-        }
     }
 }
