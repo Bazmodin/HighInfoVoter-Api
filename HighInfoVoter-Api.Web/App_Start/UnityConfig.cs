@@ -20,6 +20,8 @@ namespace HighInfoVoter_Api.Web
 
             // e.g. container.RegisterType<ITestService, TestService>();
             container.RegisterType<IConfigService, ConfigService>();
+            container.RegisterType<IWebscrapeService, WebscrapeService>();
+            container.RegisterType<IMemberService, MemberService>();
 
             container.RegisterType<IDataProvider, SqlDataProvider>(
                 new InjectionConstructor(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString));

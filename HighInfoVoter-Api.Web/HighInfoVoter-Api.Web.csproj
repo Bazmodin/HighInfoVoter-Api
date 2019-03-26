@@ -203,6 +203,8 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\Api\ConfigController.cs" />
     <Compile Include="Controllers\Api\EchoController.cs" />
+    <Compile Include="Controllers\Api\MemberController.cs" />
+    <Compile Include="Controllers\Api\WebscrapeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">

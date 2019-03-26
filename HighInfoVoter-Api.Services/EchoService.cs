@@ -1,6 +1,4 @@
-﻿using HighInfoVoter_Api.Models.Domain;
-using HighInfoVoter_Api.Models.Request;
-using System.Collections.Generic;
+﻿using HighInfoVoter_Api.Models.Request;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
