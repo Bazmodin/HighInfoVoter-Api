@@ -22,6 +22,7 @@ namespace HighInfoVoter_Api.Web
             container.RegisterType<IConfigService, ConfigService>();
             container.RegisterType<IWebscrapeService, WebscrapeService>();
             container.RegisterType<IMemberService, MemberService>();
+            container.RegisterType<IAwsS3Service, AwsS3Service>();
 
             container.RegisterType<IDataProvider, SqlDataProvider>(
                 new InjectionConstructor(ConfigurationManager.ConnectionStrings["DefaultConnection"].ConnectionString));

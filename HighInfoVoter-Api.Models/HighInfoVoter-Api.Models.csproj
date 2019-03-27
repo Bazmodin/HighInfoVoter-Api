@@ -80,10 +80,9 @@
     <Compile Include="Response\ItemsResponse.cs" />
     <Compile Include="Response\Response.cs" />
     <Compile Include="Response\SuccessResponse.cs" />
+    <Compile Include="View\SignedUrlView.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="View\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
