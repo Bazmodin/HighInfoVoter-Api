@@ -8,7 +8,9 @@ namespace HighInfoVoter_Api.Web
         public static void Register(HttpConfiguration config)
         {
             // Web API configuration and services
-            var cors = new EnableCorsAttribute("www.example.com", "*", "*");
+            //var cors = new EnableCorsAttribute("www.example.com", "*", "*");
+            string origin = "http://localhost:5500/";
+            EnableCorsAttribute cors = new EnableCorsAttribute(origin, "*", "POST");
             config.EnableCors(cors);
 
             // Web API routes

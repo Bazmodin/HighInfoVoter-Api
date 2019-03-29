@@ -64,11 +64,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Account.cs" />
     <Compile Include="Domain\Config.cs" />
     <Compile Include="Domain\Echo.cs" />
     <Compile Include="Domain\Member.cs" />
     <Compile Include="Domain\Portrait.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Request\AccountAddRequest.cs" />
+    <Compile Include="Request\AccountUpdateRequest.cs" />
     <Compile Include="Request\ConfigAddRequest.cs" />
     <Compile Include="Request\ConfigUpdateRequest.cs" />
     <Compile Include="Request\EchoAddRequest.cs" />
